@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ <title></title>
+ </head>
+   <body>
+       <script type="text/javascript">
+            var Div=function (width, number, color){
+                  this.width=width;
+                  this.color=color;
+                  this.number=number;
+                  this.createDiv= function(){
+                        document.write("<div style='width:"+width+"px;height:auto; background-color:yellow; float:left;'>");
+                       for (i=1; i<=number; i++)
+                       {
+                        if ((i+1)%4==0) { 
+
+                  document.write("<div style='width:"+(width/4-29)+"px; height:"+(width/4-29)+"px; background-color:"+color+";margin:5px; border: 2px solid black; float:left; '></div>");
+
+
+                        }
+                        else{
+                        document.write("<div style='width:"+(width/4-25)+"px; height:"+(width/4-25)+"px; background-color:"+color+";margin:5px; float:left; '></div>");
+                  }
+
+                       }
+                          document.write("</div>");
+                  }
+
+            }
+            var div1=new Div(500,13,'green');
+            
+            div1.createDiv();
+          
+              </script>
+              </body>
+              </html>

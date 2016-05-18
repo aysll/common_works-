@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+
+
+a=true;
+   
+          
+        function funk1() {
+        	 document.write("<button onclick='funk1()' style='z-index:999'>click</button>")
+          if(a){
+            document.write ("<div style='width:2000px; height:2000px; background:grey'></div>"); 
+            document.close ();
+            a=false;
+        }
+        else
+        {     
+            document.write ("<div style='width:2000px; height:2000px; background:green;'></div>");
+            document.close ();
+            a=true;
+             
+       
+    }
+        }
+       funk1();
+    </script>
+
+   
+
+
+</body>
+</html>

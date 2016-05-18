@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+// Sual 01 -Aşağıdakı kodun netice nedir ve sebebini izah edin.
+
+
+ /* var y = 1;
+  if (function f(){}) {
+    y += typeof f;
+  }
+  console.log(y);*/
+  // biz funksiyamizi if-in icinde yazdigimizdan 14-cu setirde funkisyni cagirdigda gorsenmir ve bize undefined verir.
+
+
+ // Sual 02 - Aşağıdakı massivin icini nece usulla bosaldmaq olar izah edin.
+
+
+ // var myArr =  ['a','b','c','d','e','f'];
+// usullar: 
+// usul1.bos arrray yarat ve menimset:
+      /*var yourArr = myArr;
+      myArr=[];
+      console.log(myArr);*/
+ //   usul2 
+ // myArr.splice(0,myArr.length);
+ //  console.log(myArr);
+// usul3
+   /* while(myArr.length > 0) {
+    myArr.pop();
+}*/
+
+// Sual 03 - Aşağıdakı verilen kodların neticeleri ve sebeblerini izah edin.
+
+
+ //   	var bar = true;
+	// console.log(bar + 0);   --> 1(1+0=1)
+	// console.log(bar + "xyz");  -->truexyz(string kimi oxuyur)
+	// console.log(bar + true); -->2(1+1=2) 
+	// console.log(bar + false);  -->1(1+0=1)
+
+
+// Sual 04 - Asagıdakı kodun neticesi nedir ve sebebini izah edin.
+ 
+ // var salary = "1000$";
+
+ // (function () {
+ //     console.log("Original salary was " + salary);
+
+ //     var salary = "5000$";
+
+ //     console.log("My New Salary " + salary);
+ // })();
+ //     Neticesi: Original salary was undefined
+ // My New Salary 5000$
+ // (undefined sebebi biz salary-i funkdan kenarda yazmisiq. ve funk onu gormur.)
+ 
+
+ // Sual 05 - 
+
+ /* Verilenler
+
+ 	var size=[[width],[height]];
+    var color=[];
+
+    ----Bu verilenlere gore istifadeci terefinden girilen reqeme esasen divler yaranacaq ekranda ve bu divler 4 sütün seklinde ekranda gorunecek.Ekrandakı divlerin her setirde 3.cu yerde duran div border:2px solid red  xususiyyetine sahib olacaq.(bu meselen constructor function istifade olunaraq yazılacaq.)
+
+
+//            var Div=function (width, number, color){
+                  this.width=width;
+                  this.color=color;
+                  this.number=number;
+                  this.createDiv= function(){
+                        document.write("<div style='width:"+width+"px;height:auto; background-color:yellow; float:left;'>");
+                       for (i=1; i<=number; i++)
+                       {
+                        if ((i+1)%4==0) { 
+
+                  document.write("<div style='width:"+(width/4-29)+"px; height:"+(width/4-29)+"px; background-color:"+color+";margin:5px; border: 2px solid black; float:left; '></div>");
+
+
+                        }
+                        else{
+                        document.write("<div style='width:"+(width/4-25)+"px; height:"+(width/4-25)+"px; background-color:"+color+";margin:5px; float:left; '></div>");
+                  }
+
+                       }
+                          document.write("</div>");
+                  }
+
+            }
+            var div1=new Div(500,13,'green');
+            
+            div1.createDiv();
+      </script>
+
+</body>
+</html>
